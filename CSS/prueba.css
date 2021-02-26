@@ -1,0 +1,142 @@
+main {
+    color: gainsboro;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px
+      50px
+      1fr
+      100px
+      200px;
+        grid-template-areas:
+        "my-header my-header my-header"
+        "my-nav my-nav my-nav"
+        "my-section my-section my-section"
+        "my-aside my-aside my-aside"
+        "my-footer my-footer my-footer"
+
+  }
+
+ 
+  @media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px
+      100px
+      1fr
+      100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-section my-section"
+      "my-footer my-footer my-footer"
+  }
+}
+   
+  header {
+    grid-area: my-header;
+    width: 100%;
+    height: 50px;
+    background: rgb(153, 45, 45);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;  }
+   
+  nav {
+    grid-area: my-nav;
+    background-color: cornflowerblue;
+  }
+   
+  aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+  }
+   
+  section {
+    grid-area: my-section;
+    background-color: indigo;
+  }
+   
+  footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+  }
+
+  #barra-menu {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(150, 44, 44, 0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(241, 174, 174, 0.3);
+}
+
+.menu a:hover {
+    background:  rgba(255, 251, 251, 0.9) ;
+    color: black;
+
+}
+
+#barra-menu:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+

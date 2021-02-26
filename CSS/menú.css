@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+
+}
+
+.fondo {
+    margin-top: 75px;
+    background-color: #fcf9f9;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.centro{
+    color: rgb(32, 138, 120);
+    min-height: 85vh;
+    display: grid;
+}
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+/***********************************************************************************************************************************/
+/*********************************************     FORM       *********************************************************************/
+/***********************************************************************************************************************************/
+/***********************************************************************************************************************************/
+label{
+    display: inline-block;
+    width: 80px auto;
+    height: 20px;
+    padding: 10px ;
+  }
+
+input{
+    height: 25px;
+}
+
+fieldset{
+    margin: 20px auto;
+}
+
+.titulo h1{
+    margin: 30px auto;
+    background-color: rgb(243, 156, 18);
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/***********************************************************************************************************************************/
+/*********************************************     MENÚ        *********************************************************************/
+/***********************************************************************************************************************************/
+/***********************************************************************************************************************************/
+header {
+    width: 100%;
+    height: 75px;
+    background: rgb(39, 116, 73);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .contenedor {
+    display: table;
+    margin-top: 10px;
+}
+
+#barra-menu {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(39, 116, 73);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(241, 174, 174, 0.3);
+}
+
+.menu a:hover {
+    background:  rgba(255, 251, 251, 0.9) ;
+    color: black;
+
+}
+
+#barra-menu:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+
+h1 {
+    float: left;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+/***********************************************************************************************************************************/
+/*********************************************     BOTONES        *********************************************************************/
+/***********************************************************************************************************************************/
+/***********************************************************************************************************************************/
+#btnregistrar {
+    text-transform: uppercase;
+    outline: 0;
+    background: #D35400 ;
+    width: 25%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-left: 36%;     
+  }
+
+  button:hover,.form button:active,.form button:focus {
+    background: #B7950B   ;
+  }
+  .buscar{
+    text-transform: uppercase;
+    outline: 0;
+    background: #D35400 ;
+    width: 10%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    
+  }
+  .btneliminar{
+    background-color: #FF483F; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+  }
+  .btneliminar:hover {
+      background: #f81f13;
+  }
+  .btneditar{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+  }
+  .btneditar:hover {
+    background: #258f29;
+}
+.boton {
+    border: 0; /*anchura, estilo y color borde*/
+    padding: 5px; /*espacio alrededor texto*/
+    background-color: #009650; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 10px; /*bordes redondos*/
+}
+.boton:hover{
+    background-color: #004726;
+}
+.filtro{
+    border: 0; /*anchura, estilo y color borde*/
+    padding: 5px; /*espacio alrededor texto*/
+    background-color: #009650; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 10px; /*bordes redondos*/
+}
+.filtro:hover{
+    background-color: #004726;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/***********************************************************************************************************************************/
+/*********************************************     TABLA       *********************************************************************/
+/***********************************************************************************************************************************/
+/***********************************************************************************************************************************/
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+

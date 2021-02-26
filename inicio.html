@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos</title>
+    <link rel="stylesheet" href="./CSS/menú.css">
+    <link rel="stylesheet" href="./CSS/fontello.css">
+    <link rel="stylesheet" href="./CSS/tabla.css">
+    
+    
+
+
+
+</head>
+
+<body>
+    <div class="fondo">
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-house">Registro</h1>
+                <input type="checkbox" id="barra-menu">
+                <label class="icon-menu-outline" for="barra-menu"></label>
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="InformacioEmpleado.html">Empleados</a>
+                    <a href="permisos.html">Permisos</a>
+                    <a href="horarios.html">Horarios</a>
+
+                </nav>
+            </div>
+        </header>
+        <a href="./tablahorarios.html" class="boton">Registro de Horarios</a>
+        <a href="./tablapermisos.html" class="boton">Registro de Permisos</a>
+        <a href="./inicio.html" class="boton"><img src="./img/home.png" width="25" height="25"></a>
+        <label for="filtro"></label>
+        <input type="text" id="filtro">
+        <button type="submit" onclick="filtrar()" class="filtro">Filtro por Codigo</button>
+        <a href="inicio.html" class="boton">Regresar</a><br>
+        <div class="centro">
+            
+            <div id="conte">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Codigo</th>
+                            <th scope="col">Tipo de Identificacion</th>
+                            <th scope="col">Numero de Identificacion</th>
+                            <th scope="col">Fecha de ingreso</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Celular</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Fecha de nacimiento</th>
+                            <th scope="col">Estado Civil</th>
+                            <th scope="col">Grupo Sanguineo</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Numero de contrato</th>
+                            <th scope="col">Numero Social</th>
+                            <th scope="col">Tipo de contrato</th>
+                            <th scope="col">Salario</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Area</th>
+                            <th scope="col">Eliminar</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+    
+    </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAFxtSmUfZ6Jh5FndqOH-to4AHj7hBYHgs",
+            authDomain: "proyectoweb1-8af77.firebaseapp.com",
+            databaseURL: "https://proyectoweb1-8af77-default-rtdb.firebaseio.com",
+            projectId: "proyectoweb1-8af77",
+            storageBucket: "proyectoweb1-8af77.appspot.com",
+            messagingSenderId: "648881440781",
+            appId: "1:648881440781:web:45187aa96d2d25d3f3ad44",
+            measurementId: "G-SYL23WC6JZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="./JS/bdmostrar.js"></script>
+</body>
+
+</html>

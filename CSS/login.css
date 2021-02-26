@@ -1,0 +1,66 @@
+/***********************************************************************************************************************************/
+/*********************************************     LOGIN      *********************************************************************/
+/***********************************************************************************************************************************/
+/***********************************************************************************************************************************/
+body{
+  background:url(https://nanagonzalez.com/wp-content/uploads/2018/11/character-animated-2.gif);
+}
+.centro{
+    margin: 30px;
+}
+.login {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #CCC;
+    background: url(https://gestionitas.com/wp-content/uploads/2019/08/comp_2.gif) center center no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 3px;
+  }
+  .login .form {
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;;
+  }
+  .login .form h2 {
+    color: rgb(39, 116, 73);
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-weight: bolder;
+  }
+  .login .form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background: rgba(73, 119, 87, 0.5);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 0 15px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: rgb(248, 247, 247);
+  }
+  input{
+      color: white;
+  }
+  .login .form input:focus {
+    border: 1px solid rgba(255,255,255,.8);
+    outline: none;
+  }
+ 
+  .login .form button {
+    background: rgba(199, 81, 81, 0.9);
+    color: rgb(248, 247, 247);
+    font-size: 25px;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .login .form button:hover {
+    background: rgba(194, 3, 3, 0.9);
+  }
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
