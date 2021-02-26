@@ -13,7 +13,7 @@ function validarSesion(){
 }
 
     function redireccionar(){
-        location.href="../inicio.html";
+        location.href="./inicio.html";
     }
 
     
